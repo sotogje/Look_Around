@@ -1,0 +1,259 @@
+newmtl International_Airport_convert:GSM
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.50 0.50 0.50
+Tf 1.00 1.00 1.00
+map_Kd GSM_diffuse.png
+Ni 1.00
+Ks 1.00 1.00 1.00
+Ns 64.00
+newmtl International_Airport_convert:cargo1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.50 0.50 0.50
+Tf 1.00 1.00 1.00
+map_Kd cargo_diffuse.png
+Ni 1.00
+Ks 0.08 0.08 0.08
+Ns 64.00
+newmtl International_Airport_convert:corridor
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.50 0.50 0.50
+Tf 1.00 1.00 1.00
+map_Kd corridor_diffuse.png
+Ni 1.00
+Ks 1.00 1.00 1.00
+Ns 64.00
+newmtl International_Airport_convert:floor_base
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.50 0.50 0.50
+Tf 1.00 1.00 1.00
+map_Kd floor_base_diffuse.png
+Ni 1.00
+Ks 0.08 0.08 0.08
+Ns 90.51
+newmtl International_Airport_convert:glass1
+illum 4
+Kd 0.02 0.02 0.02
+Ka 0.02 0.02 0.02
+Tf 0.15 0.15 0.15
+Ni 1.00
+Ks 0.31 0.31 0.31
+Ns 512.00
+newmtl International_Airport_convert:inne__part1
+illum 4
+Kd 0.18 0.18 0.18
+Ka 0.18 0.18 0.18
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 282.65
+newmtl International_Airport_convert:ladder
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.50 0.50 0.50
+Tf 1.00 1.00 1.00
+map_Kd ladder_diffuse.png
+bump  -bm 0 ladder_bump.png
+Ni 1.00
+Ks 1.00 1.00 1.00
+Ns 64.00
+newmtl International_Airport_convert:light_big
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd light_big_color.png
+Ni 1.00
+Ks 0.90 0.90 0.90
+Ns 4.00
+newmtl International_Airport_convert:light_metal
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.50 0.50 0.50
+Tf 1.00 1.00 1.00
+map_Kd light_diffuse.png
+Ni 1.00
+Ks 1.00 1.00 1.00
+Ns 256.00
+newmtl International_Airport_convert:metal
+illum 4
+Kd 0.04 0.04 0.04
+Ka 0.04 0.04 0.04
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.71 0.71 0.71
+Ns 64.00
+newmtl International_Airport_convert:mount_base
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.50 0.50 0.50
+Tf 1.00 1.00 1.00
+map_Kd mount_base_diffuse.png
+Ni 1.00
+Ks 0.08 0.08 0.08
+Ns 64.00
+newmtl International_Airport_convert:pl_road
+illum 4
+Kd 0.10 0.07 0.06
+Ka 0.10 0.07 0.06
+Tf 0.88 0.88 0.88
+Ni 1.00
+Ks 0.04 0.04 0.04
+Ns 64.00
+newmtl International_Airport_convert:roof_dase_edge
+illum 4
+Kd 0.64 0.64 0.64
+Ka 0.64 0.64 0.64
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.08 0.08 0.08
+Ns 64.00
+newmtl International_Airport_convert:roof_long
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.50 0.50 0.50
+Tf 1.00 1.00 1.00
+map_Kd roof_long_diffuse.png
+Ni 1.00
+Ks 0.08 0.08 0.08
+Ns 64.00
+newmtl International_Airport_convert:square_base_007
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.50 0.50 0.50
+Tf 1.00 1.00 1.00
+map_Kd square_base_003_diffuse.png
+Ni 1.00
+Ks 0.02 0.02 0.02
+Ns 39.01
+newmtl International_Airport_convert:top_winows1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.50 0.50 0.50
+Tf 1.00 1.00 1.00
+map_Kd top_winows_diffuse.png
+bump  -bm 0 top_winows_bump.png
+Ni 1.00
+Ks 0.08 0.08 0.08
+Ns 64.00
+newmtl International_Airport_convert:watch_tower1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.50 0.50 0.50
+Tf 1.00 1.00 1.00
+map_Kd watch_tower_diffuse.png
+bump  -bm 0 watch_tower_bump.png
+Ni 1.00
+Ks 1.00 1.00 1.00
+Ns 39.01
+newmtl International_Airport_convert:watch_tower_int1
+illum 4
+Kd 0.02 0.02 0.02
+Ka 0.02 0.02 0.02
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.20 0.20
+Ns 362.04
+newmtl International_Airport_convert:watch_tower_mount1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.50 0.50 0.50
+Tf 1.00 1.00 1.00
+map_Kd watch_tower_mount_diffuse.png
+bump  -bm 0 watch_tower_mount_bump.png
+Ni 1.00
+Ks 0.08 0.08 0.08
+Ns 64.00
+newmtl International_Airport_convert:windows_edge1
+illum 4
+Kd 0.04 0.04 0.04
+Ka 0.04 0.04 0.04
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.08 0.08 0.08
+Ns 39.01
+newmtl International_Airport_convert:windows_edge_long
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.50 0.50 0.50
+Tf 1.00 1.00 1.00
+map_Kd windows_edge_long_diffuse.png
+bump  -bm 0 windows_edge_long_bump.png
+Ni 1.00
+Ks 0.08 0.08 0.08
+Ns 64.00
+newmtl aiStandardSurface1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl aiStandardSurface3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl aiStandardSurface4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl aiStandardSurface5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl aiStandardSurface6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl aiStandardSurface9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl aiStandardSurface10SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl aiStandardSurface15SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl aiStandardSurface16SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl aiStandardSurface20SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl aiStandardSurface22SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl aiStandardSurface23SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
