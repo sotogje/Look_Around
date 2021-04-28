@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class MovimientoApuntar : MonoBehaviour
 {
     private LayerMask layerMask = 2;
+    private TaskController tc;
 
     RaycastHit hit;
 
@@ -13,7 +14,9 @@ public class MovimientoApuntar : MonoBehaviour
     public GameObject dot_white;
     public GameObject dot_green;
 
-    private void FixedUpdate()
+    public GameObject audifonos_icono;
+
+    private void Update()
     {
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = Input.GetAxis("Mouse Y");
@@ -28,8 +31,6 @@ public class MovimientoApuntar : MonoBehaviour
         {
             var selection = hit.transform;
             
-            Debug.Log(selection.name);
-            
             if (selection.tag == "teleport")
             {
                 dot_green.SetActive(true);
@@ -39,6 +40,24 @@ public class MovimientoApuntar : MonoBehaviour
                 {
 
                     player.transform.position = selection.transform.position;
+                }
+            }
+
+            if (selection.tag == "prop") {
+            	if (Input.GetMouseButton(0)) {
+                    selection.gameObject.SetActive(false);
+                    audifonos_icono.SetActive(true);
+            	}
+            }
+
+            if (selection.tag == "task")
+            {
+                tc = selection.gameObject.GetComponent<TaskController>();
+
+                if (Input.GetMouseButtonDown(0))
+                {
+                    tc.Interact();
+
                 }
             }
 

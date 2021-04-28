@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - teleport
+  - prop
+  - task
   layers:
   - Default
   - TransparentFX
