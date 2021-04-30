@@ -7,6 +7,8 @@ TagManager:
   - teleport
   - prop
   - task
+  - audifonos
+  - chaleco
   layers:
   - Default
   - TransparentFX

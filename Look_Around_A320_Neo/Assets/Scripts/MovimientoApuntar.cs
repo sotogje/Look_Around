@@ -15,14 +15,16 @@ public class MovimientoApuntar : MonoBehaviour
     public GameObject dot_green;
 
     public GameObject audifonos_icono;
+    public GameObject chaleco_icono;
 
     private void Update()
     {
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = Input.GetAxis("Mouse Y");
+
         var ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, (Screen.height / 2), 0));
 
-        Debug.DrawRay(ray.origin, ray.direction * 12, Color.yellow);
+        //Debug.DrawRay(ray.origin, ray.direction * 12, Color.yellow);
         
         dot_green.SetActive(false);
         dot_white.SetActive(true);
@@ -38,20 +40,39 @@ public class MovimientoApuntar : MonoBehaviour
 
                 if (Input.GetMouseButton(0))
                 {
-
                     player.transform.position = selection.transform.position;
                 }
             }
 
-            if (selection.tag == "prop") {
-            	if (Input.GetMouseButton(0)) {
+            if (selection.tag == "audifonos") {
+
+                dot_green.SetActive(true);
+                dot_white.SetActive(false);
+
+                if (Input.GetMouseButton(0)) {
                     selection.gameObject.SetActive(false);
                     audifonos_icono.SetActive(true);
             	}
             }
 
+            if (selection.tag == "chaleco")
+            {
+                dot_green.SetActive(true);
+                dot_white.SetActive(false);
+
+                if (Input.GetMouseButton(0))
+                {
+                    selection.gameObject.SetActive(false);
+                    chaleco_icono.SetActive(true);
+                }
+            }
+
             if (selection.tag == "task")
             {
+
+                dot_green.SetActive(true);
+                dot_white.SetActive(false);
+
                 tc = selection.gameObject.GetComponent<TaskController>();
 
                 if (Input.GetMouseButtonDown(0))
