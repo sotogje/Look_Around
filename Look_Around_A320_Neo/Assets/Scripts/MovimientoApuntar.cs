@@ -7,6 +7,8 @@ public class MovimientoApuntar : MonoBehaviour
 {
     private LayerMask layerMask = 2;
     private TaskController tc;
+    private TaskButtonManager tbm;
+    private TaskManager tm;
 
     RaycastHit hit;
 
@@ -14,8 +16,15 @@ public class MovimientoApuntar : MonoBehaviour
     public GameObject dot_white;
     public GameObject dot_green;
 
+    public GameObject TaskManager;
+
     public GameObject audifonos_icono;
     public GameObject chaleco_icono;
+
+    private void Start()
+    {
+        tm = TaskManager.GetComponent<TaskManager>();
+    }
 
     private void Update()
     {
@@ -24,7 +33,7 @@ public class MovimientoApuntar : MonoBehaviour
 
         var ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, (Screen.height / 2), 0));
 
-        //Debug.DrawRay(ray.origin, ray.direction * 12, Color.yellow);
+        Debug.DrawRay(ray.origin, ray.direction * 12, Color.yellow);
         
         dot_green.SetActive(false);
         dot_white.SetActive(true);
@@ -32,6 +41,7 @@ public class MovimientoApuntar : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 30))
         {
             var selection = hit.transform;
+            //Debug.Log(hit.transform.name);
             
             if (selection.tag == "teleport")
             {
@@ -73,12 +83,30 @@ public class MovimientoApuntar : MonoBehaviour
                 dot_green.SetActive(true);
                 dot_white.SetActive(false);
 
-                tc = selection.gameObject.GetComponent<TaskController>();
+                int taskPosition = tm.ReturnTaskPosition();
 
-                if (Input.GetMouseButtonDown(0))
+
+
+                if (Input.GetMouseButtonUp(0))
                 {
+                    tc = selection.GetComponent<TaskController>();
                     tc.Interact();
+                    //tm.ActivateNextTask();
+                }
+            }
 
+            if (selection.tag == "button")
+            {
+                dot_green.SetActive(true);
+                dot_white.SetActive(false);
+
+               
+
+                tbm = selection.gameObject.GetComponent<TaskButtonManager>();
+
+                if (Input.GetMouseButtonUp(0))
+                {
+                    tbm.UseToggle();
                 }
             }
 

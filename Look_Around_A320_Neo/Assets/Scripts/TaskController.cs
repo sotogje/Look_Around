@@ -7,6 +7,7 @@ public class TaskController : MonoBehaviour
     public bool isCorrect = true;
     public GameObject correctObject, incorrectObject;
 
+    public int position;
 
     void Start()
     {
@@ -35,5 +36,6 @@ public class TaskController : MonoBehaviour
             isCorrect = true;
         }
     }
+    
     
 }

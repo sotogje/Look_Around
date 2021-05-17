@@ -97,8 +97,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 491c6f94223111d41a2781efdfa92aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 300
-  player: {fileID: 3833159666386549714}
+  axes: 0
+  sensitivityX: 15
+  sensitivityY: 15
+  minimumX: -360
+  maximumX: 360
+  minimumY: -60
+  maximumY: 60
+  frameCounter: 20
 --- !u!114 &3833159665969016324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,7 +120,9 @@ MonoBehaviour:
   player: {fileID: 3833159666386549726}
   dot_white: {fileID: 0}
   dot_green: {fileID: 0}
+  TaskManager: {fileID: 0}
   audifonos_icono: {fileID: 0}
+  chaleco_icono: {fileID: 0}
 --- !u!1 &3833159666386549726
 GameObject:
   m_ObjectHideFlags: 0

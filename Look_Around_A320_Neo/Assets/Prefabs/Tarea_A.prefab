@@ -207,6 +207,7 @@ MonoBehaviour:
   isCorrect: 0
   correctObject: {fileID: 6279877362751873450}
   incorrectObject: {fileID: 6279877362653226121}
+  position: 0
 --- !u!65 &6279877362842772906
 BoxCollider:
   m_ObjectHideFlags: 0
