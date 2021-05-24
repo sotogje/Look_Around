@@ -9,6 +9,7 @@ public class MovimientoApuntar : MonoBehaviour
     private TaskController tc;
     private TaskButtonManager tbm;
     private TaskManager tm;
+    private ToggleController tg;
 
     RaycastHit hit;
 
@@ -84,9 +85,7 @@ public class MovimientoApuntar : MonoBehaviour
                 dot_white.SetActive(false);
 
                 int taskPosition = tm.ReturnTaskPosition();
-
-
-
+                
                 if (Input.GetMouseButtonUp(0))
                 {
                     tc = selection.GetComponent<TaskController>();
@@ -99,14 +98,25 @@ public class MovimientoApuntar : MonoBehaviour
             {
                 dot_green.SetActive(true);
                 dot_white.SetActive(false);
-
-               
-
+                
                 tbm = selection.gameObject.GetComponent<TaskButtonManager>();
 
                 if (Input.GetMouseButtonUp(0))
                 {
-                    tbm.UseToggle();
+                    tbm.TickTask();
+                }
+            }
+
+            if (selection.tag == "toggle")
+            {
+                dot_green.SetActive(true);
+                dot_white.SetActive(false);
+
+                tg = selection.gameObject.GetComponent<ToggleController>();
+
+                if (Input.GetMouseButtonUp(0))
+                {
+                    tg.UseToggle();
                 }
             }
 
