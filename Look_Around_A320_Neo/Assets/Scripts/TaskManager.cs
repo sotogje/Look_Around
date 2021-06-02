@@ -1,0 +1,71 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+
+public class TaskManager : MonoBehaviour
+{
+    private int taskPosition = 0;
+    public GameObject[] task;
+    public GameObject[] teleporter;
+    public GameObject[] taskText;
+
+    private GameObject currentTask;
+
+    public GameObject scoreObject;
+    private TextMeshProUGUI scoreText;
+    private int score;
+    private TaskController tc;
+
+
+    public void ActivateNextTask()
+    {
+        if (task.Length > (taskPosition + 1))
+        {
+            task[taskPosition].SetActive(false);
+            task[taskPosition + 1].SetActive(true);
+
+            teleporter[taskPosition].SetActive(false);
+            teleporter[taskPosition + 1].SetActive(true);
+
+            taskText[taskPosition].SetActive(false);
+            taskText[taskPosition + 1].SetActive(true);
+
+            taskPosition += 1;
+
+
+            Debug.Log("next task: " + (taskPosition + 1));
+        } else
+        {
+            task[taskPosition].SetActive(false);
+            teleporter[taskPosition].SetActive(false);
+            taskText[taskPosition].SetActive(false);
+            
+
+            for (int i = 0; i < task.Length; i++)
+            {
+                tc = task[i].GetComponent<TaskController>();
+
+                if (tc.GetCorrectState())
+                {
+                    score += 1;
+                }
+            }
+
+            scoreObject.SetActive(true);
+            scoreText = scoreObject.GetComponent<TextMeshProUGUI>();
+            scoreText.SetText("Score: " + score.ToString());
+
+        }
+
+
+    }
+
+
+
+    public int ReturnTaskPosition()
+    {
+        return taskPosition;
+    }
+    
+}
