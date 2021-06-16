@@ -819,6 +819,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tabla
       objectReference: {fileID: 0}
+    - target: {fileID: 550389056702504418, guid: 0f82ccf1ad8131846bc5561aed53cb68,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 550389056718653002, guid: 0f82ccf1ad8131846bc5561aed53cb68,
         type: 3}
       propertyPath: TaskManager
@@ -829,11 +834,41 @@ PrefabInstance:
       propertyPath: TaskManager
       value: 
       objectReference: {fileID: 1385124475}
+    - target: {fileID: 550389056909519908, guid: 0f82ccf1ad8131846bc5561aed53cb68,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 550389057218757272, guid: 0f82ccf1ad8131846bc5561aed53cb68,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 550389057229891146, guid: 0f82ccf1ad8131846bc5561aed53cb68,
         type: 3}
       propertyPath: TaskManager
       value: 
       objectReference: {fileID: 1385124475}
+    - target: {fileID: 1686044041549138989, guid: 0f82ccf1ad8131846bc5561aed53cb68,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2182966026314466293, guid: 0f82ccf1ad8131846bc5561aed53cb68,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2765538030059777098, guid: 0f82ccf1ad8131846bc5561aed53cb68,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3507052688008248282, guid: 0f82ccf1ad8131846bc5561aed53cb68,
+        type: 3}
+      propertyPath: m_Text
+      value: TAREA 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4321064172019506086, guid: 0f82ccf1ad8131846bc5561aed53cb68,
         type: 3}
       propertyPath: m_fontAsset
@@ -899,6 +934,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 14.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 5657803638292606425, guid: 0f82ccf1ad8131846bc5561aed53cb68,
+        type: 3}
+      propertyPath: m_Text
+      value: TAREA 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219067186237501573, guid: 0f82ccf1ad8131846bc5561aed53cb68,
+        type: 3}
+      propertyPath: m_Text
+      value: TAREA 7
       objectReference: {fileID: 0}
     - target: {fileID: 8478341260362648088, guid: 0f82ccf1ad8131846bc5561aed53cb68,
         type: 3}

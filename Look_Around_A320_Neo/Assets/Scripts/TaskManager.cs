@@ -22,7 +22,7 @@ public class TaskManager : MonoBehaviour
     {
         if (task.Length > (taskPosition + 1))
         {
-            task[taskPosition].SetActive(false);
+            //task[taskPosition].SetActive(false);
             task[taskPosition + 1].SetActive(true);
 
             teleporter[taskPosition].SetActive(false);
