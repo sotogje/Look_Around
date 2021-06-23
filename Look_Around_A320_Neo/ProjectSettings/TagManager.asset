@@ -11,6 +11,7 @@ TagManager:
   - chaleco
   - button
   - toggle
+  - taskAnim
   layers:
   - Default
   - TransparentFX

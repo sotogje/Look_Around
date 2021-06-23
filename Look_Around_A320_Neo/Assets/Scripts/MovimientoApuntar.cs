@@ -10,6 +10,7 @@ public class MovimientoApuntar : MonoBehaviour
     private TaskButtonManager tbm;
     private TaskManager tm;
     private ToggleController tg;
+    private TaskAnimController tac;
 
     RaycastHit hit;
 
@@ -90,6 +91,24 @@ public class MovimientoApuntar : MonoBehaviour
                 {
                     tc = selection.GetComponent<TaskController>();
                     tc.Interact();
+                    //tm.ActivateNextTask();
+                } 
+            }
+
+            if (selection.tag == "taskAnim")
+            {
+
+                dot_green.SetActive(true);
+                dot_white.SetActive(false);
+
+                int taskPosition = tm.ReturnTaskPosition();
+
+
+                if (Input.GetMouseButtonUp(0))
+                {
+
+                    tac = selection.GetComponent<TaskAnimController>();
+                    tac.Interact();
                     //tm.ActivateNextTask();
                 }
             }
