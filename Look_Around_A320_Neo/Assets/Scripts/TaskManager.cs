@@ -17,13 +17,20 @@ public class TaskManager : MonoBehaviour
     private int score;
     private TaskController tc;
 
+    private BoxCollider bc;
 
     public void ActivateNextTask()
     {
         if (task.Length > (taskPosition + 1))
         {
+            bc = task[taskPosition].GetComponent<BoxCollider>();
+            bc.enabled = false;
+
+            bc = task[taskPosition + 1].GetComponent<BoxCollider>();
+            bc.enabled = true;
+
             //task[taskPosition].SetActive(false);
-            task[taskPosition + 1].SetActive(true);
+            //task[taskPosition + 1].SetActive(true);
 
             teleporter[taskPosition].SetActive(false);
             teleporter[taskPosition + 1].SetActive(true);

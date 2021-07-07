@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TaskAnimController : MonoBehaviour
 {
-    private bool isCorrect = true;
+    public bool isCorrect = true;
     public Animator anim;
 
     public void OnEnable()
@@ -24,11 +24,11 @@ public class TaskAnimController : MonoBehaviour
 
         if (isCorrect)
         {
-            anim.SetBool("isOpen", false);
+            anim.SetBool("isCorrect", false);
         }
         else if (!isCorrect)
         {
-            anim.SetBool("isOpen", true);
+            anim.SetBool("isCorrect", true);
         }
 
     }
