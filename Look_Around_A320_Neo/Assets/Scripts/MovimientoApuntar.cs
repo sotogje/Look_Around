@@ -19,10 +19,7 @@ public class MovimientoApuntar : MonoBehaviour
     public GameObject dot_green;
 
     public GameObject TaskManager;
-
-    public GameObject audifonos_icono;
-    public GameObject chaleco_icono;
-
+    
     private void Start()
     {
         tm = TaskManager.GetComponent<TaskManager>();
@@ -50,94 +47,13 @@ public class MovimientoApuntar : MonoBehaviour
                 dot_green.SetActive(true);
                 dot_white.SetActive(false);
 
-                if (Input.GetMouseButton(0))
+                if (Input.GetMouseButton(1))
                 {
                     player.transform.position = selection.transform.position;
                 }
             }
 
-            if (selection.tag == "audifonos") {
-
-                dot_green.SetActive(true);
-                dot_white.SetActive(false);
-
-                if (Input.GetMouseButton(0)) {
-                    selection.gameObject.SetActive(false);
-                    audifonos_icono.SetActive(true);
-            	}
-            }
-
-            if (selection.tag == "chaleco")
-            {
-                dot_green.SetActive(true);
-                dot_white.SetActive(false);
-
-                if (Input.GetMouseButton(0))
-                {
-                    selection.gameObject.SetActive(false);
-                    chaleco_icono.SetActive(true);
-                }
-            }
-
-            if (selection.tag == "task")
-            {
-
-                dot_green.SetActive(true);
-                dot_white.SetActive(false);
-
-                int taskPosition = tm.ReturnTaskPosition();
-                
-                if (Input.GetMouseButtonUp(0))
-                {
-                    tc = selection.GetComponent<TaskController>();
-                    tc.Interact();
-                    //tm.ActivateNextTask();
-                } 
-            }
-
-            if (selection.tag == "taskAnim")
-            {
-
-                dot_green.SetActive(true);
-                dot_white.SetActive(false);
-
-                int taskPosition = tm.ReturnTaskPosition();
-
-
-                if (Input.GetMouseButtonUp(0))
-                {
-
-                    tac = selection.GetComponent<TaskAnimController>();
-                    tac.Interact();
-                    //tm.ActivateNextTask();
-                }
-            }
-
-            if (selection.tag == "button")
-            {
-                dot_green.SetActive(true);
-                dot_white.SetActive(false);
-                
-                tbm = selection.gameObject.GetComponent<TaskButtonManager>();
-
-                if (Input.GetMouseButtonUp(0))
-                {
-                    tbm.TickTask();
-                }
-            }
-
-            if (selection.tag == "toggle")
-            {
-                dot_green.SetActive(true);
-                dot_white.SetActive(false);
-
-                tg = selection.gameObject.GetComponent<ToggleController>();
-
-                if (Input.GetMouseButtonUp(0))
-                {
-                    tg.UseToggle();
-                }
-            }
+        
 
         }
     }

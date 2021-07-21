@@ -2132,6 +2132,12 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &629570678 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3833159666386549726, guid: 35e19fc3a9f1dd24fa01f5e60665069b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1882397974}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &719979305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4944,6 +4950,24 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1882397974}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1528204589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528204587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43702ade99c0c094da94a9c4dc25a696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 629570678}
+  dot_white: {fileID: 1345643158}
+  dot_green: {fileID: 983255719}
+  TaskManager: {fileID: 1385124475}
+  audifonos_icono: {fileID: 1742477406}
+  chaleco_icono: {fileID: 849153754}
 --- !u!114 &1528204593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5861,6 +5885,11 @@ PrefabInstance:
     - target: {fileID: 3833159666386549714, guid: 35e19fc3a9f1dd24fa01f5e60665069b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833159666386549715, guid: 35e19fc3a9f1dd24fa01f5e60665069b,
+        type: 3}
+      propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3833159666386549726, guid: 35e19fc3a9f1dd24fa01f5e60665069b,
