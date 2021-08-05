@@ -1,15 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class ScoreManager : MonoBehaviour
+﻿
+public static class ScoreManager
 {
-    private int score = 0;
-
-
-
-    public void SetScore(int _score)
+    private static int score;
+    
+    public static void SetScore(int _score)
     {
         score = _score;
+    }
+
+    public static int GetScore()
+    {
+        return score;
     }
 }
