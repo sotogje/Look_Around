@@ -9,6 +9,8 @@ public class TaskController : MonoBehaviour
     
     public void OnEnable()
     {
+        Random.seed = 10;
+
         int randomCorrect = Random.Range(0, 2);
 
         switch (randomCorrect)

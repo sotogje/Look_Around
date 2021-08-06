@@ -16,13 +16,17 @@ public class TaskManager : MonoBehaviour
     private TextMeshProUGUI scoreText;
     private int score;
     private TaskController tc;
+    private TaskAnimController tac;
 
     private BoxCollider bc;
 
     public void ActivateNextTask()
     {
-        if (task.Length > (taskPosition + 1))
+        if (task.Length - 1 > (taskPosition))
         {
+            Debug.Log("Task length: " + task.Length);
+            Debug.Log("Task performed " + (taskPosition));
+
             bc = task[taskPosition].GetComponent<BoxCollider>();
             bc.enabled = false;
 
@@ -40,8 +44,7 @@ public class TaskManager : MonoBehaviour
 
             taskPosition += 1;
 
-
-            Debug.Log("next task: " + (taskPosition + 1));
+            
         } else
         {
             task[taskPosition].SetActive(false);
@@ -52,13 +55,30 @@ public class TaskManager : MonoBehaviour
             for (int i = 0; i < task.Length; i++)
             {
                 tc = task[i].GetComponent<TaskController>();
+                tac = task[i].GetComponent<TaskAnimController>();
 
-                if (tc.GetCorrectState())
+
+                if (tc != null)
                 {
-                    score += 1;
+                    if (tc.GetCorrectState())
+                    {
+                        score += 1;
+                    }
                 }
+
+                if (tac != null)
+                {
+                    if (tac.GetCorrectState())
+                    {
+                        score += 1;
+                    }
+                }
+                
             }
 
+            ScoreManager.SetScore(score);
+
+            Debug.Log("FInal sc: " + ScoreManager.GetScore());
             scoreObject.SetActive(true);
             scoreText = scoreObject.GetComponent<TextMeshProUGUI>();
             scoreText.SetText("Score: " + score.ToString());

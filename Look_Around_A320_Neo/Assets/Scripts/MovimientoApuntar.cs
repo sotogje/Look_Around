@@ -19,7 +19,7 @@ public class MovimientoApuntar : MonoBehaviour
     public GameObject dot_green;
 
     public GameObject TaskManager;
-    
+        
     private void Start()
     {
         tm = TaskManager.GetComponent<TaskManager>();

@@ -12,6 +12,7 @@ TagManager:
   - button
   - toggle
   - taskAnim
+  - menuButton
   layers:
   - Default
   - TransparentFX

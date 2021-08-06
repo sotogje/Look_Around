@@ -11,6 +11,7 @@ public class AccionApuntar : MonoBehaviour
     private TaskManager tm;
     private ToggleController tg;
     private TaskAnimController tac;
+    private MenuButton mb;
 
     RaycastHit hit;
 
@@ -128,6 +129,21 @@ public class AccionApuntar : MonoBehaviour
                 {
                     tg.UseToggle();
                 }
+            }
+
+            if (selection.tag == "menuButton")
+            {
+                dot_green.SetActive(true);
+                dot_white.SetActive(false);
+
+                mb = selection.gameObject.GetComponent<MenuButton>();
+
+                if (Input.GetMouseButtonUp(0))
+                {
+                    mb.UseButton();
+                }
+
+
             }
 
         }

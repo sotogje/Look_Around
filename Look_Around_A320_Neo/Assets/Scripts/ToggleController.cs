@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class ToggleController : MonoBehaviour
 {
-    public GameObject toggle;
     private Toggle tg; 
 
     void Start()
     {
-        tg = toggle.GetComponent<Toggle>();
+        
+        tg = gameObject.GetComponent<Toggle>();
 
     }
     
