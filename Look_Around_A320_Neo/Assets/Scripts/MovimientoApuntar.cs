@@ -18,13 +18,20 @@ public class MovimientoApuntar : MonoBehaviour
     public GameObject player;
     public GameObject dot_white;
     public GameObject dot_green;
+    public GameObject black_screen;
 
     public GameObject TaskManager;
-        
+
+    public Camera cam;
+
+    private Animator anim_black;
+    private Vector3 teleportPosition;
+
     private void Start()
     {
         tm = TaskManager.GetComponent<TaskManager>();
-        controller.GetComponent<OVRPlayerController>();
+        //controller.GetComponent<OVRPlayerController>();
+        anim_black = black_screen.GetComponent<Animator>();
     }
 
     private void Update()
@@ -32,7 +39,7 @@ public class MovimientoApuntar : MonoBehaviour
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = Input.GetAxis("Mouse Y");
 
-        var ray = Camera.current.ScreenPointToRay(new Vector3(Screen.width / 2, (Screen.height / 2), 0));
+        var ray = cam.ScreenPointToRay(new Vector3(Screen.width / 2, (Screen.height / 2), 0));
 
         Debug.DrawRay(ray.origin, ray.direction * 12, Color.yellow);
         
@@ -51,12 +58,14 @@ public class MovimientoApuntar : MonoBehaviour
 
                 if (Input.GetMouseButton(1))
                 {
-                    player.transform.position = selection.transform.position;
+                    teleportPosition = selection.transform.position;
+                    StartCoroutine("Teleport");
                 }
 
                 if(OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
                 {
-                    player.transform.position = selection.transform.position;
+                    teleportPosition = selection.transform.position;
+                    StartCoroutine("Teleport");
 
                 }
 
@@ -65,5 +74,14 @@ public class MovimientoApuntar : MonoBehaviour
         
 
         }
+    }
+
+    private IEnumerator Teleport()
+    {
+        anim_black.SetBool("Fade", true);
+        yield return new WaitForSeconds(1.0f);
+
+        anim_black.SetBool("Fade", false);
+        player.transform.position = teleportPosition;
     }
 }
