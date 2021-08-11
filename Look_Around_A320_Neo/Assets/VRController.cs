@@ -7,16 +7,12 @@ public class VRController : MonoBehaviour
 {
     private OVRPlayerController controller;
 
-    [SerializeField]
-    private float moveSpeedMultiplier = 3.0f;
 
-    [SerializeField]
-    private bool allowDoubleXSpeed = false;
 
     void Start()
     {
         controller = GetComponent<OVRPlayerController>();
-        controller.SetMoveScaleMultiplier(moveSpeedMultiplier);
+     
     }
 
     void Update()
@@ -37,13 +33,13 @@ public class VRController : MonoBehaviour
         //X
         if (OVRInput.GetDown(OVRInput.RawButton.X))
         {
-            controller.Jump();
+           
         }
 
         //Y
         if (OVRInput.GetDown(OVRInput.RawButton.Y))
         {
-            controller.Jump();
+            
         }
 
        

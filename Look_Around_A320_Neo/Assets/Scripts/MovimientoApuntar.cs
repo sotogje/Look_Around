@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class MovimientoApuntar : MonoBehaviour
 {
+    private OVRPlayerController controller;
     private LayerMask layerMask = 2;
     private TaskController tc;
     private TaskButtonManager tbm;
@@ -23,6 +24,7 @@ public class MovimientoApuntar : MonoBehaviour
     private void Start()
     {
         tm = TaskManager.GetComponent<TaskManager>();
+        controller.GetComponent<OVRPlayerController>();
     }
 
     private void Update()
@@ -30,7 +32,7 @@ public class MovimientoApuntar : MonoBehaviour
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = Input.GetAxis("Mouse Y");
 
-        var ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, (Screen.height / 2), 0));
+        var ray = Camera.current.ScreenPointToRay(new Vector3(Screen.width / 2, (Screen.height / 2), 0));
 
         Debug.DrawRay(ray.origin, ray.direction * 12, Color.yellow);
         
@@ -51,6 +53,13 @@ public class MovimientoApuntar : MonoBehaviour
                 {
                     player.transform.position = selection.transform.position;
                 }
+
+                if(OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
+                {
+                    player.transform.position = selection.transform.position;
+
+                }
+
             }
 
         
