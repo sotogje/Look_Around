@@ -17,12 +17,18 @@ public class MovimientoApuntar : MonoBehaviour
     public GameObject player;
     public GameObject dot_white;
     public GameObject dot_green;
+    public GameObject black_screen;
+
+    private Animator anim_black;
 
     public GameObject TaskManager;
-        
+
+    private Vector3 teleportPosition;
+
     private void Start()
     {
         tm = TaskManager.GetComponent<TaskManager>();
+        anim_black = black_screen.GetComponent<Animator>();
     }
 
     private void Update()
@@ -49,12 +55,22 @@ public class MovimientoApuntar : MonoBehaviour
 
                 if (Input.GetMouseButton(1))
                 {
-                    player.transform.position = selection.transform.position;
+                    teleportPosition = selection.transform.position;
+                    StartCoroutine("Teleport");
                 }
             }
 
         
 
         }
+    }
+
+    private IEnumerator Teleport()
+    {
+        anim_black.SetBool("Fade", true);
+        yield return new WaitForSeconds(1.2f);
+
+        anim_black.SetBool("Fade", false);
+        player.transform.position = teleportPosition;
     }
 }
