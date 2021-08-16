@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(OVRPlayerController))]
 public class MovimientoApuntar : MonoBehaviour
 {
     private OVRPlayerController controller;
@@ -30,7 +31,7 @@ public class MovimientoApuntar : MonoBehaviour
     private void Start()
     {
         tm = TaskManager.GetComponent<TaskManager>();
-        //controller.GetComponent<OVRPlayerController>();
+        controller=GetComponent<OVRPlayerController>();
         anim_black = black_screen.GetComponent<Animator>();
     }
 
