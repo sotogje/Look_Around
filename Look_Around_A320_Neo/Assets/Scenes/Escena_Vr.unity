@@ -383,7 +383,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &12736141
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -452,7 +452,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 12736140}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.15, y: 1.8014452, z: 1.78}
+  m_LocalPosition: {x: -14.46, y: 10.29, z: 9.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2471,7 +2471,7 @@ PrefabInstance:
     - target: {fileID: 550389056533738796, guid: 0f82ccf1ad8131846bc5561aed53cb68,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.186
+      value: 0.311
       objectReference: {fileID: 0}
     - target: {fileID: 550389056533738796, guid: 0f82ccf1ad8131846bc5561aed53cb68,
         type: 3}
@@ -2517,6 +2517,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 550389056533738797, guid: 0f82ccf1ad8131846bc5561aed53cb68,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 550389056747908833, guid: 0f82ccf1ad8131846bc5561aed53cb68,
         type: 3}
@@ -3869,6 +3874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rightHand: 0
+  menu: {fileID: 745981189}
   layerMask:
     serializedVersion: 2
     m_Bits: 256
@@ -3989,6 +3995,12 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 0
   m_Loop: 0
+--- !u!1 &745981189 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 550389056533738797, guid: 0f82ccf1ad8131846bc5561aed53cb68,
+    type: 3}
+  m_PrefabInstance: {fileID: 500170096}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &745981190 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 550389056533738796, guid: 0f82ccf1ad8131846bc5561aed53cb68,
@@ -6359,6 +6371,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303408294050017114, guid: 893dffb51a26afd40b3eca677b8f0016,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8303408294050017114, guid: 893dffb51a26afd40b3eca677b8f0016,
         type: 3}

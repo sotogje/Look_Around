@@ -9,6 +9,10 @@ public class MovimientoApuntarVR : MonoBehaviour
     public bool rightHand;
     private float rayDir;
 
+
+    public GameObject menu;
+
+
     private OVRPlayerController controller;
     public LayerMask layerMask = 2;
     private TaskController tc;
@@ -39,7 +43,17 @@ public class MovimientoApuntarVR : MonoBehaviour
 
     private void Update()
     {
-     
+        if (OVRInput.GetDown(OVRInput.RawButton.X))
+        {
+
+            bool isActive = menu.activeSelf;
+
+            menu.SetActive(!isActive);
+
+        }
+
+       
+
 
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.back) * rayDir, out hit, Mathf.Infinity, layerMask))
