@@ -49,14 +49,21 @@ public class AccionApuntarVR : MonoBehaviour
 
             var selection = hit.transform;
 
+
+            if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
+            {
+                Debug.Log("Trigger Derecho Presionado");
+            }
+            
             if (selection.tag == "audifonos")
             {
 
                 dot_green.SetActive(true);
                 dot_white.SetActive(false);
 
-                if (OVRInput.GetDown(OVRInput.RawButton.X))
+                if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
                 {
+                 
                     selection.gameObject.SetActive(false);
                     audifonos_icono.SetActive(true);
                 }

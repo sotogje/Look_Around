@@ -42,9 +42,15 @@ public class MovimientoApuntarVR : MonoBehaviour
      
 
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward) * rayDir, out hit, Mathf.Infinity, layerMask))
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.back) * rayDir, out hit, Mathf.Infinity, layerMask))
         {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * rayDir * hit.distance, Color.green);
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.back) * rayDir * hit.distance, Color.green);
+
+            if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
+            {
+                Debug.Log("Trigger Izquierdo Presionado");
+            }
+
             if (hit.transform.tag == "teleport")
  
                 {
@@ -64,7 +70,7 @@ public class MovimientoApuntarVR : MonoBehaviour
 
         else
         {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * rayDir * 1000, Color.red);
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.back) * rayDir * 1000, Color.red);
 
         }
 
