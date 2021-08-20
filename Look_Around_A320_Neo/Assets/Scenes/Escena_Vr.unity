@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 4497420}
   - component: {fileID: 4497422}
   - component: {fileID: 4497421}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Compartimiento de avionica frontal
   m_TagString: taskAnim
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ Transform:
   - {fileID: 1783306698}
   - {fileID: 1175932680}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &9514972
 PrefabInstance:
@@ -234,6 +234,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747115739}
     m_Modifications:
+    - target: {fileID: 6279877362653226121, guid: a0cbba136841f9f46bc66a41c1e5b92d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 6279877362653226121, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
       propertyPath: m_IsActive
@@ -251,6 +256,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6279877362751873450, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279877362751873450, guid: a0cbba136841f9f46bc66a41c1e5b92d,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -258,6 +268,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tren de aterrizaje
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279877362842772905, guid: a0cbba136841f9f46bc66a41c1e5b92d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6279877362842772905, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
@@ -383,7 +398,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &12736141
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -456,7 +471,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &25497585
 PrefabInstance:
@@ -972,7 +987,7 @@ Transform:
   - {fileID: 6279877362574537084}
   - {fileID: 872446294}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &222534601
 GameObject:
@@ -984,7 +999,7 @@ GameObject:
   m_Component:
   - component: {fileID: 222534602}
   - component: {fileID: 222534603}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1075,6 +1090,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6279877362653226121, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279877362653226121, guid: a0cbba136841f9f46bc66a41c1e5b92d,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -1090,6 +1110,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6279877362751873450, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279877362751873450, guid: a0cbba136841f9f46bc66a41c1e5b92d,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1097,6 +1122,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Angulo de ataque
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279877362842772905, guid: a0cbba136841f9f46bc66a41c1e5b92d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6279877362842772905, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
@@ -1245,7 +1275,7 @@ GameObject:
   - component: {fileID: 227082435}
   - component: {fileID: 227082437}
   - component: {fileID: 227082436}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Seguros del radomo
   m_TagString: taskAnim
   m_Icon: {fileID: 0}
@@ -1305,7 +1335,7 @@ GameObject:
   - component: {fileID: 230367390}
   - component: {fileID: 230367392}
   - component: {fileID: 230367391}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: puerta_grande
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1384,7 +1414,7 @@ GameObject:
   - component: {fileID: 247437198}
   - component: {fileID: 247437200}
   - component: {fileID: 247437199}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Panel de drenaje de agua potable
   m_TagString: taskAnim
   m_Icon: {fileID: 0}
@@ -1476,7 +1506,7 @@ GameObject:
   - component: {fileID: 317947366}
   - component: {fileID: 317947365}
   - component: {fileID: 317947364}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: seguro
   m_TagString: taskAnim
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -1555,7 +1585,7 @@ GameObject:
   - component: {fileID: 348227075}
   - component: {fileID: 348227077}
   - component: {fileID: 348227076}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pCylinder3 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1707,6 +1737,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: llanta_ponchada_V2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 35c9d684dea114c48a77c5f981f1c44b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35c9d684dea114c48a77c5f981f1c44b, type: 3}
 --- !u!1001 &366206984
@@ -1822,12 +1857,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 500170096}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &385832378 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8303408294050017114, guid: 893dffb51a26afd40b3eca677b8f0016,
-    type: 3}
-  m_PrefabInstance: {fileID: 772971775}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &386675182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,7 +1867,7 @@ GameObject:
   m_Component:
   - component: {fileID: 386675183}
   - component: {fileID: 386675184}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2049,7 +2078,7 @@ GameObject:
   - component: {fileID: 476250324}
   - component: {fileID: 476250326}
   - component: {fileID: 476250325}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface40 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2841,6 +2870,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6279877362653226121, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279877362653226121, guid: a0cbba136841f9f46bc66a41c1e5b92d,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -2856,6 +2890,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6279877362751873450, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279877362751873450, guid: a0cbba136841f9f46bc66a41c1e5b92d,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -2863,6 +2902,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Puerto de estatica
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279877362842772905, guid: a0cbba136841f9f46bc66a41c1e5b92d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6279877362842772905, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
@@ -3279,7 +3323,7 @@ PrefabInstance:
     - target: {fileID: 7016241630130690576, guid: d27f23dad3336544dac59076e8c3bc62,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7016241630130690576, guid: d27f23dad3336544dac59076e8c3bc62,
         type: 3}
@@ -3428,7 +3472,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &613914680
 GameObject:
@@ -3519,7 +3563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 629206749}
   - component: {fileID: 629206750}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pivot
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -3570,7 +3614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 646225139}
   - component: {fileID: 646225140}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3652,12 +3696,6 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &666213992 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8303408294050017114, guid: 893dffb51a26afd40b3eca677b8f0016,
-    type: 3}
-  m_PrefabInstance: {fileID: 1207258562}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &679397416
 GameObject:
   m_ObjectHideFlags: 0
@@ -3697,6 +3735,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6279877362653226121, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279877362653226121, guid: a0cbba136841f9f46bc66a41c1e5b92d,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -3712,6 +3755,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6279877362751873450, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279877362751873450, guid: a0cbba136841f9f46bc66a41c1e5b92d,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -3719,6 +3767,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Llantas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279877362842772905, guid: a0cbba136841f9f46bc66a41c1e5b92d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6279877362842772905, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
@@ -3879,6 +3932,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   player: {fileID: 1292565065}
+  ray_Red: {fileID: 1253241431}
+  ray_Green: {fileID: 1763806690}
   TaskManager: {fileID: 1385124475}
 --- !u!143 &725420376
 CharacterController:
@@ -4255,7 +4310,7 @@ PrefabInstance:
     - target: {fileID: 8303408294050017110, guid: 893dffb51a26afd40b3eca677b8f0016,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8303408294050017110, guid: 893dffb51a26afd40b3eca677b8f0016,
         type: 3}
@@ -4407,7 +4462,7 @@ GameObject:
   - component: {fileID: 781736817}
   - component: {fileID: 781736819}
   - component: {fileID: 781736818}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Compartimiento de avionica lateral (segundo)
   m_TagString: taskAnim
   m_Icon: {fileID: 0}
@@ -4493,7 +4548,7 @@ Transform:
   - {fileID: 388926857002637585}
   - {fileID: 6939956210698694612}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &815083837
 GameObject:
@@ -4506,7 +4561,7 @@ GameObject:
   - component: {fileID: 815083838}
   - component: {fileID: 815083840}
   - component: {fileID: 815083839}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pPlane1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4796,7 +4851,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 3835ad3990ba4ca40920b54423744d47,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3835ad3990ba4ca40920b54423744d47,
         type: 3}
@@ -4885,7 +4940,7 @@ GameObject:
   m_Component:
   - component: {fileID: 905547571}
   - component: {fileID: 905547572}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pivot
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -5131,7 +5186,7 @@ GameObject:
   - component: {fileID: 969486771}
   - component: {fileID: 969486773}
   - component: {fileID: 969486772}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Puerto de ventilacion
   m_TagString: taskAnim
   m_Icon: {fileID: 0}
@@ -5197,7 +5252,7 @@ GameObject:
   - component: {fileID: 987606445}
   - component: {fileID: 987606447}
   - component: {fileID: 987606446}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pTorus1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5276,7 +5331,7 @@ GameObject:
   - component: {fileID: 996388273}
   - component: {fileID: 996388275}
   - component: {fileID: 996388274}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: puerta_pequenia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5451,7 +5506,7 @@ GameObject:
   - component: {fileID: 1062644797}
   - component: {fileID: 1062644799}
   - component: {fileID: 1062644798}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5703,6 +5758,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cunia
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 039c337ba32b2eb4b9a5bfd9a21e0259,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 039c337ba32b2eb4b9a5bfd9a21e0259, type: 3}
@@ -6242,6 +6302,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: angulo_ataque_roto
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 64cb99e3b9fc0874aa329e22172e606b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64cb99e3b9fc0874aa329e22172e606b, type: 3}
 --- !u!1 &1185514341 stripped
@@ -6263,6 +6328,95 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.017888429, y: 0.00011684834, z: 0.019467918}
   m_Center: {x: -0.002072895, y: -0.000058637197, z: 0.0026386448}
+--- !u!1001 &1186659791
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c140f66ae8dc2ec4c9900518b46cd8d4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c140f66ae8dc2ec4c9900518b46cd8d4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.281746
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c140f66ae8dc2ec4c9900518b46cd8d4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.546662
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c140f66ae8dc2ec4c9900518b46cd8d4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.718895
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c140f66ae8dc2ec4c9900518b46cd8d4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c140f66ae8dc2ec4c9900518b46cd8d4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c140f66ae8dc2ec4c9900518b46cd8d4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c140f66ae8dc2ec4c9900518b46cd8d4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c140f66ae8dc2ec4c9900518b46cd8d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c140f66ae8dc2ec4c9900518b46cd8d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c140f66ae8dc2ec4c9900518b46cd8d4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6312261167394418740, guid: c140f66ae8dc2ec4c9900518b46cd8d4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f2e28ab49ffc2a44db9471db89a62b93, type: 2}
+    - target: {fileID: -5913465298432369138, guid: c140f66ae8dc2ec4c9900518b46cd8d4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f2e28ab49ffc2a44db9471db89a62b93, type: 2}
+    - target: {fileID: -3597498501884643957, guid: c140f66ae8dc2ec4c9900518b46cd8d4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2a1610acd706e1d42b99762e65ce92b6, type: 2}
+    - target: {fileID: 919132149155446097, guid: c140f66ae8dc2ec4c9900518b46cd8d4,
+        type: 3}
+      propertyPath: m_Name
+      value: Headphones
+      objectReference: {fileID: 0}
+    - target: {fileID: 4084362191275566544, guid: c140f66ae8dc2ec4c9900518b46cd8d4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2a1610acd706e1d42b99762e65ce92b6, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c140f66ae8dc2ec4c9900518b46cd8d4, type: 3}
 --- !u!1 &1188080992
 GameObject:
   m_ObjectHideFlags: 0
@@ -6520,7 +6674,7 @@ PrefabInstance:
     - target: {fileID: 2222254996122417527, guid: 21a3978466f08204e92a496afea37985,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2222254996122417527, guid: 21a3978466f08204e92a496afea37985,
         type: 3}
@@ -6594,7 +6748,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1245968454}
   - component: {fileID: 1245968455}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pivot
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -6646,7 +6800,7 @@ GameObject:
   - component: {fileID: 1250491712}
   - component: {fileID: 1250491714}
   - component: {fileID: 1250491713}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6853,7 +7007,7 @@ GameObject:
   - component: {fileID: 1263124337}
   - component: {fileID: 1263124339}
   - component: {fileID: 1263124338}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Compartimiento de avionica lateral (primero)
   m_TagString: taskAnim
   m_Icon: {fileID: 0}
@@ -7175,7 +7329,7 @@ Transform:
   - {fileID: 932394080}
   - {fileID: 153536718}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1296292332
 PrefabInstance:
@@ -7184,6 +7338,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1747115739}
     m_Modifications:
+    - target: {fileID: 6279877362653226121, guid: a0cbba136841f9f46bc66a41c1e5b92d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 6279877362653226121, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
       propertyPath: m_IsActive
@@ -7201,6 +7360,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6279877362751873450, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279877362751873450, guid: a0cbba136841f9f46bc66a41c1e5b92d,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -7208,6 +7372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Puerto de estatica de Standby
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279877362842772905, guid: a0cbba136841f9f46bc66a41c1e5b92d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6279877362842772905, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
@@ -7445,7 +7614,7 @@ GameObject:
   - component: {fileID: 1318875398}
   - component: {fileID: 1318875400}
   - component: {fileID: 1318875399}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7524,7 +7693,7 @@ GameObject:
   - component: {fileID: 1344614864}
   - component: {fileID: 1344614866}
   - component: {fileID: 1344614865}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7691,7 +7860,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1385904262
 GameObject:
@@ -7704,7 +7873,7 @@ GameObject:
   - component: {fileID: 1385904263}
   - component: {fileID: 1385904265}
   - component: {fileID: 1385904264}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface36 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7782,7 +7951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1414085534}
   - component: {fileID: 1414085535}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7875,7 +8044,7 @@ GameObject:
   - component: {fileID: 1417103363}
   - component: {fileID: 1417103365}
   - component: {fileID: 1417103364}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cunia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7991,7 +8160,7 @@ GameObject:
   - component: {fileID: 1457301518}
   - component: {fileID: 1457301520}
   - component: {fileID: 1457301519}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface67 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8079,7 +8248,7 @@ PrefabInstance:
     - target: {fileID: 5518628904464934523, guid: 3fabd35cecd211540a73c2a822643cf7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5518628904464934523, guid: 3fabd35cecd211540a73c2a822643cf7,
         type: 3}
@@ -8290,8 +8459,8 @@ MonoBehaviour:
   dot_white: {fileID: 1787393797}
   dot_green: {fileID: 1177881833}
   TaskManager: {fileID: 1385124475}
-  audifonos_icono: {fileID: 666213992}
-  chaleco_icono: {fileID: 385832378}
+  audifonos_icono: {fileID: 1742477406}
+  chaleco_icono: {fileID: 849153754}
 --- !u!143 &1521856317
 CharacterController:
   m_ObjectHideFlags: 0
@@ -8394,6 +8563,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b332c99e649c6e942b3e2f2c1e3cbc58,
         type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b332c99e649c6e942b3e2f2c1e3cbc58,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -8481,6 +8655,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: angulo_ataque
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d6c08dfac207c9242b395f0fcc6742b0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c08dfac207c9242b395f0fcc6742b0, type: 3}
 --- !u!1 &1629061664
@@ -8527,7 +8706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1697406031}
   - component: {fileID: 1697406032}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pivot
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -8650,6 +8829,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: tapon_puertaDeEstatica
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a6c0d750c4ac8fc47a2679b0bfa8653d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6c0d750c4ac8fc47a2679b0bfa8653d, type: 3}
 --- !u!1 &1736137521
@@ -8698,7 +8882,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1747115739}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tareas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8734,7 +8918,7 @@ Transform:
   - {fileID: 7189547612676213294}
   - {fileID: 247437198}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1763806690
 GameObject:
@@ -8948,6 +9132,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3835ad3990ba4ca40920b54423744d47,
         type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3835ad3990ba4ca40920b54423744d47,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -8963,7 +9152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1778584740}
   - component: {fileID: 1778584741}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pivot
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -9242,6 +9431,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6279877362653226121, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279877362653226121, guid: a0cbba136841f9f46bc66a41c1e5b92d,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -9257,6 +9451,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6279877362751873450, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279877362751873450, guid: a0cbba136841f9f46bc66a41c1e5b92d,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -9264,6 +9463,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tren de aterrizaje (luces)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279877362842772905, guid: a0cbba136841f9f46bc66a41c1e5b92d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6279877362842772905, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
@@ -9485,7 +9689,7 @@ GameObject:
   - component: {fileID: 1839286817}
   - component: {fileID: 1839286819}
   - component: {fileID: 1839286818}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: frn_atr_wheels (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9627,7 +9831,7 @@ PrefabInstance:
     - target: {fileID: 3833159666386549714, guid: 35e19fc3a9f1dd24fa01f5e60665069b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3833159666386549714, guid: 35e19fc3a9f1dd24fa01f5e60665069b,
         type: 3}
@@ -9700,6 +9904,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6279877362653226121, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279877362653226121, guid: a0cbba136841f9f46bc66a41c1e5b92d,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -9715,6 +9924,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6279877362751873450, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279877362751873450, guid: a0cbba136841f9f46bc66a41c1e5b92d,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -9722,6 +9936,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tubos piloto
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279877362842772905, guid: a0cbba136841f9f46bc66a41c1e5b92d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6279877362842772905, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
@@ -9988,7 +10207,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1932966407
 GameObject:
@@ -10000,7 +10219,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1932966408}
   - component: {fileID: 1932966409}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pivot
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -10123,6 +10342,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: tapon_piloto
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b4022e24adfa92041968f6f45bf75e95,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4022e24adfa92041968f6f45bf75e95, type: 3}
 --- !u!1 &1957731772
@@ -10136,7 +10360,7 @@ GameObject:
   - component: {fileID: 1957731773}
   - component: {fileID: 1957731775}
   - component: {fileID: 1957731774}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface61 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10216,7 +10440,7 @@ GameObject:
   - component: {fileID: 1966376793}
   - component: {fileID: 1966376795}
   - component: {fileID: 1966376794}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface68 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10458,7 +10682,7 @@ PrefabInstance:
     - target: {fileID: 3601637637725493413, guid: cb149417359d67e4980db03c6c1d0621,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3601637637725493413, guid: cb149417359d67e4980db03c6c1d0621,
         type: 3}
@@ -10674,6 +10898,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: tapon_puertaDeEstatica
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a6c0d750c4ac8fc47a2679b0bfa8653d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6c0d750c4ac8fc47a2679b0bfa8653d, type: 3}
 --- !u!1 &2118224971
@@ -10721,7 +10950,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2127585700}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pin de seguridad
   m_TagString: taskAnim
   m_Icon: {fileID: 0}
@@ -10824,6 +11053,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: tapon_piloto (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b4022e24adfa92041968f6f45bf75e95,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4022e24adfa92041968f6f45bf75e95, type: 3}
@@ -11647,7 +11881,7 @@ GameObject:
   - component: {fileID: 2103920645581779877}
   - component: {fileID: 344682206119379966}
   - component: {fileID: 344682206119379965}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: "cu\xF1a"
   m_TagString: taskAnim
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -12042,7 +12276,7 @@ Transform:
   - {fileID: 1171284121}
   - {fileID: 613914681}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &550552105866304089
 MeshFilter:
@@ -16050,7 +16284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6537352775665212860}
   - component: {fileID: 4543834822089225520}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pivot
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -16460,7 +16694,7 @@ GameObject:
   - component: {fileID: 3281206408672861706}
   - component: {fileID: 8711851224603619943}
   - component: {fileID: 5815287631911583788}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface61
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16776,7 +17010,7 @@ GameObject:
   - component: {fileID: 348709346547762541}
   - component: {fileID: 5746984335588306055}
   - component: {fileID: 6289265840756691852}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface46
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18734,7 +18968,7 @@ GameObject:
   - component: {fileID: 670951158407220689}
   - component: {fileID: 8404084508213597343}
   - component: {fileID: 2502624785086013539}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: frn_atr_wheels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19560,7 +19794,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4754172187391052987}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cunia
   m_TagString: taskAnim
   m_Icon: {fileID: 0}
@@ -24019,7 +24253,7 @@ GameObject:
   - component: {fileID: 7189547612676213294}
   - component: {fileID: 7189547612676213295}
   - component: {fileID: 8933741057436338513}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Compartimiento frontal de carga
   m_TagString: taskAnim
   m_Icon: {fileID: 0}
@@ -24931,7 +25165,7 @@ GameObject:
   - component: {fileID: 1855862123012551895}
   - component: {fileID: 3901025705835678914}
   - component: {fileID: 7119420842446181238}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface64
   m_TagString: Untagged
   m_Icon: {fileID: 0}

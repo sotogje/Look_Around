@@ -24,7 +24,8 @@ public class MovimientoApuntarVR : MonoBehaviour
     RaycastHit hit;
 
     public GameObject player;
-
+    public GameObject ray_Red;
+    public GameObject ray_Green;
 
     public GameObject TaskManager;
 
@@ -60,14 +61,15 @@ public class MovimientoApuntarVR : MonoBehaviour
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.back) * rayDir * hit.distance, Color.green);
 
-            if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
-            {
-                Debug.Log("Trigger Izquierdo Presionado");
-            }
+          
 
             if (hit.transform.tag == "teleport")
  
                 {
+
+                ray_Green.SetActive(true);
+                ray_Red.SetActive(false);
+
 
                 if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
                 {
@@ -78,6 +80,8 @@ public class MovimientoApuntarVR : MonoBehaviour
 
                         StartCoroutine("Teleport");
 
+
+
                     }
                 }
         }
@@ -85,7 +89,8 @@ public class MovimientoApuntarVR : MonoBehaviour
         else
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.back) * rayDir * 1000, Color.red);
-
+            ray_Green.SetActive(false);
+            ray_Red.SetActive(true);
         }
 
     }

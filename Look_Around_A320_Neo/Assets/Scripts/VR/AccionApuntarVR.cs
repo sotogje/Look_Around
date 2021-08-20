@@ -165,6 +165,8 @@ public class AccionApuntarVR : MonoBehaviour
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * rayDir * 1000, Color.red);
 
+            dot_green.SetActive(false);
+            dot_white.SetActive(true);
         }
 
     }
