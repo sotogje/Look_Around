@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 3a4822d2205ac4044aaef50bb634b850,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -7716,13 +7716,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3833159666386549714, guid: 35e19fc3a9f1dd24fa01f5e60665069b,
         type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.435488
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833159666386549714, guid: 35e19fc3a9f1dd24fa01f5e60665069b,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.69854
       objectReference: {fileID: 0}
     - target: {fileID: 3833159666386549714, guid: 35e19fc3a9f1dd24fa01f5e60665069b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.76
+      value: 7.79
       objectReference: {fileID: 0}
     - target: {fileID: 3833159666386549714, guid: 35e19fc3a9f1dd24fa01f5e60665069b,
         type: 3}
@@ -7763,6 +7768,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833159666386549715, guid: 35e19fc3a9f1dd24fa01f5e60665069b,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3833159666386549726, guid: 35e19fc3a9f1dd24fa01f5e60665069b,
         type: 3}
