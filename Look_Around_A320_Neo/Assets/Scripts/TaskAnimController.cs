@@ -1,15 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class TaskAnimController : MonoBehaviour
 {
     public bool isCorrect = true;
     public Animator anim;
 
+    private void Start()
+    {
+        var time = DateTime.Now.Ticks;
+        //Debug.Log("time " + time); 
+        UnityEngine.Random.InitState((int)time);
+    }
+
     public void OnEnable()
     {
-        int randomCorrect = Random.Range(0, 2);
+        
+
+        int randomCorrect = UnityEngine.Random.Range(0, 2);
 
         switch (randomCorrect)
         {

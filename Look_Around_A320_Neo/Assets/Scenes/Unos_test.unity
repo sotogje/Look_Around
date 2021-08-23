@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 3a4822d2205ac4044aaef50bb634b850,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -272,7 +272,7 @@ PrefabInstance:
     - target: {fileID: 6279877362842772907, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6279877362842772907, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
@@ -3259,7 +3259,7 @@ PrefabInstance:
     - target: {fileID: 6279877362842772907, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6279877362842772907, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
@@ -3359,6 +3359,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6764723516166068327, guid: 893dffb51a26afd40b3eca677b8f0016,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8303408294050017110, guid: 893dffb51a26afd40b3eca677b8f0016,
         type: 3}
       propertyPath: m_RootOrder
@@ -3449,6 +3454,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303408295259170449, guid: 893dffb51a26afd40b3eca677b8f0016,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 893dffb51a26afd40b3eca677b8f0016, type: 3}
@@ -5561,7 +5571,7 @@ Transform:
   m_Children:
   - {fileID: 1697406031}
   m_Father: {fileID: 1747115739}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: -179.99998, z: 0}
 --- !u!114 &1263124338
 MonoBehaviour:
@@ -6215,10 +6225,10 @@ MonoBehaviour:
   - {fileID: 4497419}
   - {fileID: 344682206119379964}
   - {fileID: 317947362}
-  - {fileID: 1263124336}
   - {fileID: 719979308}
   - {fileID: 9514975}
   - {fileID: 1451592212}
+  - {fileID: 1263124336}
   - {fileID: 781736816}
   - {fileID: 7189547612676213292}
   - {fileID: 247437197}
@@ -7057,10 +7067,10 @@ Transform:
   - {fileID: 4497420}
   - {fileID: 4754172187391052987}
   - {fileID: 2127585700}
-  - {fileID: 1263124337}
   - {fileID: 719979309}
   - {fileID: 9514976}
   - {fileID: 1809585421}
+  - {fileID: 1263124337}
   - {fileID: 781736817}
   - {fileID: 7189547612676213294}
   - {fileID: 247437198}
@@ -7383,7 +7393,7 @@ PrefabInstance:
     - target: {fileID: 6279877362842772907, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6279877362842772907, guid: a0cbba136841f9f46bc66a41c1e5b92d,
         type: 3}
